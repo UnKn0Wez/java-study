@@ -1,4 +1,4 @@
-package com.qzw.jbl;
+package com.qzw.jbl.week5;
 
 /**
  * @ClassName first
