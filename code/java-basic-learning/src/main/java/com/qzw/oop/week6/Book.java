@@ -2,15 +2,14 @@ package com.qzw.oop.week6;
 
 import lombok.*;
 
-import java.util.Date;
-
 /**
  * @ClassName Book
  * @Description 图书实体类
  * @Author UnKnW
  * @Date 2020/10/15
  **/
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -18,9 +17,18 @@ public class Book {
 
         private String bookName;
         private Integer price;
-        private Date publishDate;
+        private String publishDate;
 
-//    public Book(String bookName,Integer price,Date publishDate)
+//        @Override
+//        public String toString() {
+//                DateFormat sdf = new SimpleDateFormat("yyy-MM-dd HH:mm:ss");
+//
+//                String now = sdf.format(this.publishDate);
+//                String s1 = "book{name:%s,date:%s";
+//                return String.format(s1,this.bookName,this.price,now);
+//                //return "book{name:"+this.bookName+",price:"+this.price+",publishDate:"+now;
+//        }
+        //    public Book(String bookName,Integer price,Date publishDate)
 //    {
 //        this.bookName = bookName;
 //        this.price = price;
