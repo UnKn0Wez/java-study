@@ -21,4 +21,9 @@ public class SuperStarTest {
     public void showTV() {
         ss.showTV();
     }
+
+    @Test
+    public void introduce() {
+        ss.introduce();
+    }
 }
